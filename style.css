@@ -1,0 +1,121 @@
+
+  /* used fade affect on h1 headers*/
+  header h1 {
+    font-size: 90px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #010000, hwb(118 1% 11% / 0.965));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }  
+
+  /* used whenever you want to right justify text */
+  .right{
+    text-align: right;
+}   
+
+ /* used whenever you want to left justify text */
+ .left{
+    text-align: left;
+ }
+ 
+ /* used whenever you want to picture to fill sides */
+ .FWI {
+    max-width: 110%;
+    max-height: 100%;
+  
+}
+
+ /* used whenever you want to picture to fill sides */
+.button {
+    background-color: #4c81af; /* Green */
+    border: none;
+    color: rgb(4, 0, 0);
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* used to make nice border */
+.mixed
+{
+  border-style: solid double;
+  border-width: 15px;
+  border-color: green;
+
+}
+
+.modal
+{
+ display: none; 
+ position:fixed;
+ z-index: 1;
+ left: 0;
+ top:0;
+ height:100%;
+ width:100%;
+ overflow:auto;
+ background-color: rgba(0,0,0,0.5);
+ direction:ltr;
+
+}
+.modal-content
+{
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  /* padding: 20px; */
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 0.8s;
+}
+
+.modal-header h2, .modal-footer h3
+{
+    margin:0 ;
+}
+
+.modal-header{
+display: flex; /* Use flex to make the header content appear side by side */
+justify-content: space-between; /* To separate header content with space */
+align-items: center;
+background: coral;
+padding: 15px;
+background-color: rgba(0, 136, 255, 0.3);
+direction:ltr;
+}
+
+.modal-body{
+    padding: 10px 20px;
+}
+
+.modal-footer{
+	display: flex; /* Use flex to make the header content appear side by side */
+    justify-content: center; /* To separate header content with space */
+    align-items: center;
+    background-color: rgba(0, 136, 255, 0.3);
+    padding:10px;
+    color: #000;
+}
+
+.closeBtn{
+    color:#ccc;
+    float: right;
+    font-size:30px;
+    color:#fff;
+	direction:ltr;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen
+{
+    from{opacity:0}
+    to{opacity:1}
+}
